@@ -15,7 +15,7 @@ public class MybatisTestCase {
     @Test
     public void save(){
 
-        Student student = new Student("杨新见","夏邑县");
+        Student student = new Student("理工大","焦作市");
 
         SqlSession sqlSession = MybatisUtil.getSqlSession();
         sqlSession.insert("com.kaishengit.mapper.StudentMapper.save",student);
